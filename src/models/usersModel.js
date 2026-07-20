@@ -6,6 +6,7 @@ const userSchema = new mongoose.Schema({
   senha: { type: String },
   email: { type: String },
   celular: { type: String },
+  papel: { type: String },
 });
 
 // Criando o model
