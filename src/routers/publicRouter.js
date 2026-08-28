@@ -5,7 +5,8 @@ import { login } from "../controllers/loginController.js";
 export const publicRouter = Router();
 
 publicRouter.get("/", getRoot);
-publicRouter.get("/usuarios", getUsers);
+// Tornei essa rota autenticada e privada
+// publicRouter.get("/usuarios", getUsers);
 publicRouter.get("/usuarios/:id", getUsersById);
 publicRouter.post("/usuarios/", createUser);
 publicRouter.delete("/usuarios/:id", deleteUserById);
